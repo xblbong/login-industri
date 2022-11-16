@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #911778, #333399);
+    
+}
+.container{
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    margin-top: 70px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+.txt_input input{
+    margin-top: -10px;
+    width: 330px;
+    height: 80px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 3px solid rgb(187, 180, 180);
+    display: flex;
+}
+
+.txt_input label{
+    position: absolute;
+    margin-left: -160px;
+    margin-top: -40px;
+    color: dimgray;
+    transform: translateY(-30%);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.txt_input span::before{
+    content: '';
+    position: absolute;
+    margin-top: -3px;
+    margin-left: -165px;
+    width: 0%;
+    height: 3px;
+    background: #2e8eb8;
+    transition: .5s;
+}
+
+.txt_input input:focus ~ span::before,
+.txt_input input:valid ~ span::before{
+    width: 330px;
+}
+button{ 
+    font-size: large;
+    width: 80%;
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+    background-color: #2e8eb8;
+    border: none;
+    cursor: pointer;
+}
+
+.container p{
+    color:dimgray;
+}
+.container p a{
+    color: #2e8eb8;
+    text-decoration: none;
+}
+
+/* batas suci login */
+
